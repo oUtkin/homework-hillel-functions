@@ -8,13 +8,12 @@ def change(lst):
 
 input_list = []
 while len(input_list) < 2:
-    data = input('Enter a list separated by spaces: ')
-    input_list = data.split()
+    input_list = input('Enter a list separated by spaces: ').split()
     if len(input_list) < 2:
         print('List must contain at least 2 elements!')
 
-input_list = change(input_list)
-print(f'Here is your transformed list: {input_list}')
+final_list = change(input_list)
+print(f'Here is your transformed list: {final_list}')
 
 # Напишіть функцію to_dict(lst),
 # яка приймає аргумент у вигляді списку і повертає словник, в якому кожен елемент списку є ключем і значенням.
